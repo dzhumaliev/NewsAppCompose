@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 @Composable
 fun MainScreen(navController: NavHostController) {
     Text("hii")
+    
 
 }
 
