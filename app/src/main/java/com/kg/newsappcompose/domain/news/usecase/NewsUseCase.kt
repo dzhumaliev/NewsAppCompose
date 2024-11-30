@@ -1,8 +1,8 @@
 package com.kg.newsappcompose.domain.news.usecase
 
 import androidx.paging.PagingData
+import com.kg.newsappcompose.domain.news.Articles
 import com.kg.newsappcompose.domain.news.repository.NewsRepository
-import com.kg.newsappcompose.model.Articles
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

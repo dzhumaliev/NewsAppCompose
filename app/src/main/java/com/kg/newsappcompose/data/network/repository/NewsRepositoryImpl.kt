@@ -4,8 +4,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.kg.newsappcompose.data.network.NewsPagingSource
+import com.kg.newsappcompose.domain.news.Articles
 import com.kg.newsappcompose.domain.news.repository.NewsRepository
-import com.kg.newsappcompose.model.Articles
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

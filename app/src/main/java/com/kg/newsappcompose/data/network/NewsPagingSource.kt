@@ -1,11 +1,10 @@
 package com.kg.newsappcompose.data.network
 
-import androidx.annotation.Nullable
-import androidx.compose.runtime.snapshots.SnapshotApplyResult
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.kg.newsappcompose.data.network.remote.Api
-import com.kg.newsappcompose.model.Articles
+import com.kg.newsappcompose.domain.base.Failure
+import com.kg.newsappcompose.domain.news.Articles
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
@@ -42,7 +41,7 @@ class NewsPagingSource @AssistedInject constructor(
                 }
                 else -> {
                     LoadResult.Error(
-                        SnapshotApplyResult.Failure.Unknown(e.message)
+                        Failure.Unknown(e.message)
                     )
                 }
             }

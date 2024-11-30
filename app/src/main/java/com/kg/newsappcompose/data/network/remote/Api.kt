@@ -1,6 +1,6 @@
 package com.kg.newsappcompose.data.network.remote
 
-import com.kg.newsappcompose.model.PostModel
+import com.kg.newsappcompose.model.NewsModel
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -10,5 +10,5 @@ interface Api {
         @Query("q") q: String = "tesla",
         @Query("page") page: Int,
         @Query("pageSize") pageSize: Int
-    ): PostModel
+    ): NewsModel
 }
